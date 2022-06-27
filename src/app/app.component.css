@@ -1,0 +1,11 @@
+input[type=text] {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+h1{
+    font-weight: bolder;
+}
