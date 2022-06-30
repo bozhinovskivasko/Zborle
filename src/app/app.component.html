@@ -4,57 +4,63 @@
   <br>
   <div class="row">
     <div class="col" id="0">
-      <input [disabled]="counter!==0 || order!==0" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required autofocus>
-      <input [disabled]="counter!==0 || order!==1" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==0 || order!==2" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==0 || order!==3" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==0 || order!==4 || word === todaysWord" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
+      <input [disabled]="row!==0 || word.length!==0" (input)="addLetter($event)" class="m-1" type="text" maxlength="1" autofocus>
+      <input [disabled]="row!==0 || word.length!==1" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==0 || word.length!==2" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==0 || word.length!==3" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==0 || word.length!==4 || word === todaysWord || doesExist" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
     </div>
   </div>
   <div class="row">
     <div class="col" id="1">
-      <input [disabled]="counter!==1 || order!==0" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required autofocus>
-      <input [disabled]="counter!==1 || order!==1" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==1 || order!==2" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==1 || order!==3" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==1 || order!==4 || word === todaysWord" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
+      <input [disabled]="row!==1 || word.length!==0" (input)="addLetter($event)" class="m-1" type="text" maxlength="1" autofocus>
+      <input [disabled]="row!==1 || word.length!==1" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==1 || word.length!==2" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==1 || word.length!==3" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==1 || word.length!==4 || word === todaysWord || doesExist" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
     </div>
   </div>
   <div class="row">
     <div class="col" id="2">
-      <input [disabled]="counter!==2 || order!==0" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==2 || order!==1" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==2 || order!==2" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==2 || order!==3" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==2 || order!==4 || word === todaysWord" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
+      <input [disabled]="row!==2 || word.length!==0" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==2 || word.length!==1" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==2 || word.length!==2" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==2 || word.length!==3" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==2 || word.length!==4 || word === todaysWord || doesExist" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
     </div>
   </div>
   <div class="row">
     <div class="col" id="3">
-      <input [disabled]="counter!==3 || order!==0" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==3 || order!==1" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==3 || order!==2" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==3 || order!==3" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==3 || order!==4 || word === todaysWord" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
+      <input [disabled]="row!==3 || word.length!==0" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==3 || word.length!==1" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==3 || word.length!==2" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==3 || word.length!==3" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==3 || word.length!==4 || word === todaysWord || doesExist" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
     </div>
   </div>
   <div class="row">
     <div class="col" id="4">
-      <input [disabled]="counter!==4 || order!==0" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==4 || order!==1" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==4 || order!==2" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==4 || order!==3" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==4 || order!==4 || word === todaysWord" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
+      <input [disabled]="row!==4 || word.length!==0" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==4 || word.length!==1" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==4 || word.length!==2" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==4 || word.length!==3" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==4 || word.length!==4 || word === todaysWord || doesExist" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
     </div>
   </div>
   <div class="row">
     <div class="col" id="5">
-      <input [disabled]="counter!==5 || order!==0" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==5 || order!==1" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==5 || order!==2" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==5 || order!==3" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
-      <input [disabled]="counter!==5 || order!==4 || word === todaysWord" (input)="dodadi($event)" class="m-1" type="text" maxlength="1" required>
+      <input [disabled]="row!==5 || word.length!==0" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==5 || word.length!==1" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==5 || word.length!==2" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==5 || word.length!==3" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
+      <input [disabled]="row!==5 || word.length!==4 || word === todaysWord || doesExist" (input)="addLetter($event)" class="m-1" type="text" maxlength="1">
     </div>
   </div>
+
+   <div class="row">
+    <div class="col m-2" *ngIf="word === todaysWord" id="success"> Честитки го погодивте зборот</div>
+    <div class="col m-2" *ngIf="word !== todaysWord && row===6" id="fail">Не го погодивте зборот. Зборот што го баравме беше: {{ this.todaysWord }}</div>
+    <div class="col m-2" *ngIf="showErrorMessage" id="invalidWord">Непостоечки збор, внесете нов збор!</div>
+   </div>
 </div>
 
